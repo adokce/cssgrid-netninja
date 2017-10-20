@@ -9,17 +9,14 @@ body{
     margin: 0 auto;
 
     display: grid;
-    /* grid-template-columns: 30% 20% 50% */
-    /* grid-template-columns: 1fr 1fr 1fr; */
     grid-template-columns: repeat(3, 1fr); /*ez*/
 
-    /* grid-template-rows: 200px 300px 400px 200px; */
-    grid-template-rows: repeat(3, minmax(200px, auto));
-    grid-auto-rows: minmax(200px,auto);
+    grid-auto-rows: minmax(150px,auto);
 
-    /* grid-column-gap: 10px;
-    grid-row-gap: 5px; */
     grid-gap: 8px;
+
+    /* align-items: start; */
+    /* /* justify-items: end; */ */
 }
 
 #content div{
@@ -28,4 +25,19 @@ body{
 }
 #content div:nth-child(even){
     background: #777;
+}
+
+.one{
+    justify-self: end;
+    align-self: end;
+}
+
+.two{
+    align-self: center;
+    justify-self: center;
+}
+
+.three{
+    align-self: start;
+    justify-self: start;
 }
